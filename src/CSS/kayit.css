@@ -1,0 +1,203 @@
+.kayit-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image:
+    linear-gradient(
+      rgba(15, 23, 42, 0.30),
+      rgba(15, 23, 42, 0.46)
+    ),
+    url("../meraa.jpeg");
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  padding: 20px;
+}
+
+.kayit-card {
+  width: 100%;
+  max-width: 440px;
+
+  background:
+    linear-gradient(
+      180deg,
+      rgba(255, 255, 255, 0.18),
+      rgba(255, 255, 255, 0.10)
+    );
+
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+
+  padding: 24px 38px 18px;
+
+  border-radius: 30px;
+  border: 1px solid rgba(255, 255, 255, 0.24);
+
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.36);
+
+  position: relative;
+  overflow: hidden;
+
+  animation: fadeUp 0.65s ease;
+}
+
+.kayit-card h1 {
+  text-align: center;
+
+  color: #ffffff;
+
+  margin: 0 0 8px;
+
+  font-size: 36px;
+  font-weight: 800;
+
+  letter-spacing: -1px;
+}
+
+.kayit-card p {
+  text-align: center;
+
+  color: rgba(255, 255, 255, 0.86);
+
+  margin: 0 0 24px;
+
+  font-size: 14px;
+  line-height: 1.55;
+}
+
+.input-group {
+  margin-bottom: 15px;
+}
+
+.input-group label {
+  display: block;
+
+  margin-bottom: 7px;
+
+  color: #ffffff;
+
+  font-weight: 650;
+  font-size: 14px;
+}
+
+.input-group input {
+  width: 100%;
+
+  padding: 13px 15px;
+
+  border-radius: 15px;
+
+  border: 1px solid rgba(255, 255, 255, 0.28);
+
+  outline: none;
+
+  font-size: 15px;
+
+  background: rgba(255, 255, 255, 0.86);
+
+  color: #1f2937;
+
+  transition: 0.25s ease;
+}
+
+.input-group input::placeholder {
+  color: #64748b;
+}
+
+.input-group input:hover {
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.input-group input:focus {
+  border-color: rgba(134, 239, 172, 0.95);
+
+  box-shadow:
+    0 0 0 4px rgba(134, 239, 172, 0.18),
+    0 8px 18px rgba(0, 0, 0, 0.14);
+
+  transform: translateY(-1px);
+}
+
+.kayit-btn {
+  width: 100%;
+
+  padding: 14px;
+
+  border: none;
+  border-radius: 17px;
+
+  background: linear-gradient(135deg, #22c55e, #15803d);
+
+  color: white;
+
+  font-size: 16px;
+  font-weight: 750;
+
+  cursor: pointer;
+
+  margin-top: 8px;
+
+  box-shadow: 0 14px 28px rgba(21, 128, 61, 0.38);
+
+  transition: 0.25s ease;
+}
+
+.kayit-btn:hover {
+  transform: translateY(-2px) scale(1.01);
+
+  box-shadow: 0 20px 38px rgba(21, 128, 61, 0.48);
+}
+
+.mesaj {
+  margin-top: 14px;
+
+  text-align: center;
+
+  color: #ffffff;
+
+  font-weight: 600;
+
+  background: rgba(255, 255, 255, 0.13);
+
+  padding: 10px;
+
+  border-radius: 14px;
+}
+
+.login-link {
+  text-align: center;
+
+  margin-top: 18px;
+
+  color: rgba(255, 255, 255, 0.88);
+
+  font-size: 14px;
+}
+
+.login-link span {
+  color: #bbf7d0;
+
+  font-weight: 750;
+
+  cursor: pointer;
+}
+
+.login-link span:hover {
+  text-decoration: underline;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(18px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
